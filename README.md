@@ -1,2 +1,1 @@
-# kawsay-peru
-kawasay peru
+# Kawsay-Peru

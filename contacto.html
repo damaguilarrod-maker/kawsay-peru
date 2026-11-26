@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ponte en contacto con kawsay peru y descubre tu proximo destino pacifico">
+    <title>Kawsay Perú - Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/logo.png" width="192" height="192" alt="Logo Kawsay Perú" class="logo-img">
+            <span class="logo-text">Kawsay Perú</span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-container contact-page">
+        <section class="contacto-header">
+            <p class="contacto-eyebrow">Tu próxima pausa empieza aquí</p>
+            <h1>Envíanos tu consulta</h1>
+            <p>Cuéntanos dónde te gustaría encontrar calma. Te ayudamos a crear un viaje a tu ritmo,<br class="contacto-salto"> con atención cercana y personal.</p>
+        </section>
+
+        <div class="contacto-layout">
+            <!-- Formulario -->
+            <section class="form-section animate-slide-left">
+                <h2>Hablemos de tu próximo viaje</h2>
+                <p class="form-description">Déjanos tus datos y nos pondremos en contacto contigo.</p>
+
+                <!-- Alerta de éxito -->
+                <div id="success-msg" class="alert-kawsay alert-success-kawsay" role="alert" style="display:none;">
+                    &#10003; ¡Consulta enviada con éxito! Nos pondremos en contacto contigo pronto.
+                </div>
+
+                <!-- Alerta de error global -->
+                <div id="error-msg-global" class="alert-kawsay alert-error-kawsay" role="alert" style="display:none;">
+                    &#9888; Por favor, corrige los campos marcados antes de continuar.
+                </div>
+
+                <form id="formContacto" method="POST" novalidate>
+
+                    <!-- Nombre completo -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre y apellidos">
+                        <span class="error-msg" id="error-nombre">El nombre no puede estar vacío.</span>
+                    </div>
+
+                    <!-- Correo electrónico -->
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="tu@correo.com">
+                        <span class="error-msg" id="error-correo">Ingresa un correo electrónico válido (ej: nombre@dominio.com).</span>
+                    </div>
+
+                    <!-- Celular -->
+                    <div class="form-group">
+                        <label for="celular">Celular (9 dígitos)</label>
+                        <input type="tel" id="celular" placeholder="Ingresa tu número de celular">
+                        <span class="error-msg" id="error-celular">Ingresa un número de teléfono válido (9 dígitos).</span>
+                    </div>
+
+                    <!-- Destino -->
+                    <div class="form-group">
+                        <label for="destino">Destino de interés</label>
+                        <select id="destino">
+                            <option value="">Selecciona un destino</option>
+                            <option value="tambopata">Tambopata</option>
+                            <option value="mancora">Máncora</option>
+                            <option value="valle">Valle Sagrado</option>
+                            <option value="laguna">Laguna Azul</option>
+                            <option value="zorritos">Playa Zorritos</option>
+                            <option value="escalera">Cordillera Escalera</option>
+                        </select>
+                        <span class="error-msg" id="error-destino">Selecciona un destino de interés.</span>
+                    </div>
+
+                    <button type="submit" class="btn-primary w-100 contact-submit">Enviar consulta>&rarr;</button>
+                </form>
+                <p class="contacto-privacidad">Al enviar tu consulta, aceptas nuestras Políticas de privacidad. Tus datos se utilizarán únicamente para atender tu solicitud.</p>
+            </section>
+
+            <!-- Info de contacto -->
+            <section class="info-section">
+                <h2>Contacto Kawsay</h2>
+                <p class="info-description">Estamos aquí para escucharte y acompañarte en cada paso de tu experiencia.</p>
+                <div class="info-item">
+                    <img src="img/icon-mail.png" width="96" height="96">
+                    <div>
+                        <span class="info-label">Correo electrónico</span>
+                        <p>contacto@kawsayperu.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="img/icon-phone.png" width="96" height="96">
+                    <div>
+                        <span class="info-label">Celular</span>
+                        <p>+51 987 654 321</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="img/icon-clock.png" width="96" height="96">
+                    <div>
+                        <span class="info-label">Horario de atención</span>
+                        <p>Lunes a Viernes 9:00 am - 6:00 pm</p>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <img src="img/mapape.png" width="1000" height="560" alt="Ubicación Mapa">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            <p>&copy; 2026 Kawsay Perú. <br> Por Angel Huriel Rabanal Aquino, Damaris Aguilar y Elias Bermudez.</p>
+        </div>
+        <div class="footer-center">
+            <p>Redes sociales</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com"><img src="img/icon-ig.png" width="96" height="96" alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img src="img/icon-fb.png" width="96" height="96" alt="Facebook"></a>
+                <a href="https://www.youtube.com"><img src="img/icon-yt.png" width="96" height="96" alt="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/kawsay.js"></script>
+</body>
+</html>
